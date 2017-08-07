@@ -1,6 +1,6 @@
 <?php
-	define('DV_URL', 'tw1.dv.dev');
-    //define('DV_URL', 'twsso.dealvector.com');
+	//define('DV_URL', 'tw1.dv.dev');
+    define('DV_URL', 'twsso.dealvector.com');
 
 
     include_once 'user-data.php';
@@ -14,7 +14,7 @@
 </div>
 
 <script>
-    var DV_URL = "http://<?php echo DV_URL?>";
+    var DV_URL = window.location.protocol + "<?php echo DV_URL?>";
 
     //IDENTITY_REQUEST
     var receiveMessage = function(msg) {
@@ -68,6 +68,6 @@
 
 </script>
 
-<iframe src="http://<?php echo DV_URL?>/sso/tw" height="600" width="90%">
+<iframe src="//<?php echo DV_URL?>/sso/tw" height="600" width="90%">
 
 </iframe>
